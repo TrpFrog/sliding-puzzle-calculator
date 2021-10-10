@@ -1,0 +1,58 @@
+body { 
+    margin: 30px;
+    font-family: sans-serif;
+}
+input{ font-size: 1em; text-align: center; width: 3em;}
+button{ font-size: 0.8em; }
+
+form input {
+    margin-right: 5px;
+}
+
+#matrix-area {
+    display: flex;
+}
+
+#matrix-area div {
+    /* margin: 10px; */
+    text-align: center;
+}
+
+#matrix-area div + div {
+    margin-left: 30px;
+}
+
+#matrix-area table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#matrix-area input {
+    font-size: 2em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#buttons-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3px;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: column;
+}
+
+#buttons button {
+    margin-top: 10px;
+}
+
+#distance-wrapper {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#distance {
+    font-weight: normal;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <script type="text/javascript" src="script.js"></script>
+        <style> @import "style.css"; </style>
+        <title>Sliding Puzzle Manhattan Calculator</title>
+    </head>
+
+    <body>
+        <h1>Sliding Puzzle Calculator</h1>
+        <p>
+            It calculates the sum of the Manhattan distances for each block of the sliding puzzle.
+        </p>
+        <p>
+            <form>
+                <p>
+                    Rows: <input type="number" id="number-of-row" value="3">
+                    Columns: <input type="number" id="number-of-coulmn" value="2">
+                    <input type="submit" id="apply-matrix-option" value="Go" 
+                        onclick="updateMatrixSize(); return false;">
+                </p>
+            </form>
+        </p>
+        <div id="matrix-area">
+            <div>
+                <h2>Current</h2>
+                <p>
+                    <table id="current-matrix"></table>
+                </p>
+            </div>
+            <div>
+                <h2>Goal</h2>
+                <p>
+                    <table id="goal-matrix"></table>
+                </p>
+            </div>
+            <div id="buttons-wrapper">
+                <p id="buttons">
+                    <button onclick="updateDistance()">Calculate</button>
+                    <button onclick="updateMatrixSize()">Reset</button>
+                    <button id="toggle" onclick="toggleSlideMode()">Slide: ON</button>
+                </p>
+            </div>
+        </div>
+        <p id="distance-wrapper">
+            Distance: <span id="distance">0</span>
+        </p>
+    </body>
+</html>
